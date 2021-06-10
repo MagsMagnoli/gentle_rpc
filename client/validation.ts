@@ -9,10 +9,9 @@ import type {
 
 function validateRpcBasis(data: any): data is RpcResponseBasis {
   return (
-    data?.jsonrpc === "2.0" &&
-    (typeof data.id === "number" ||
-      typeof data.id === "string" ||
-      data.id === null)
+    typeof data.id === "number" ||
+    typeof data.id === "string" ||
+    data.id === null
   );
 }
 function validateRpcSuccess(data: any): data is RpcSuccess {
