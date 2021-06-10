@@ -3,6 +3,10 @@
 JSON-RPC 2.0 library with WebSockets and HTTP support for
 [deno](https://github.com/denoland/deno) and the browser.
 
+## Notice
+
+The purpose of this fork was to remove the `"jsonrpc": "2.0"` requirement in response payloads.
+
 ## Server
 
 ### respond
